@@ -1,3 +1,11 @@
 # Add 'code-scanning' label to any changes within 'code-scanning' folder or any subfolders
 code-scanning:
 - code-scanning/**/*
+require 'stripe'
+charge = Stripe::Charge.retrieve(
+  'ch_3KlqcoISOxj70O5e0OrBTSFM',
+  {
+    stripe_account: 'acct_1KlggaISOxj70O5e',
+  }
+)
+charge.capture # Uses the same account.
