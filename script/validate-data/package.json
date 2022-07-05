@@ -16,6 +16,6 @@
   "dependencies": {
     "@actions/core": "^1.2.6",
     "js-yaml": "^3.14.1",
-    "jsonschema": "^1.2.6"
+    "jsonschema": "^1.4.1"
   }
 }
